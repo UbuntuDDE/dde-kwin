@@ -1,12 +1,17 @@
 #!/usr/bin/make -f
 
-export QT_SELECT=5
+export DH_VERBOSE = 1
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all parallel=1
+include /usr/share/dpkg/buildflags.mk
+
+export QT_SELECT := 5
 
 %:
-	dh $@ 
+	dh $@
 
 override_dh_shlibdeps:
 	dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
 
 override_dh_auto_test:
+	# Disable dh_auto_test at build time
 	:

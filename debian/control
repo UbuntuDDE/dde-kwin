@@ -2,49 +2,68 @@ Source: dde-kwin
 Section: devel
 Priority: optional
 Maintainer: Deepin Packages Builder <packages@deepin.com>
-Build-Depends: debhelper (>=9),
+Build-Depends:
+ build-essential,
  cmake,
- qtbase5-dev,
- qtbase5-private-dev,
- libqt5x11extras5-dev,
- libxcb1-dev,
- libkf5globalaccel-dev,
- libkf5windowsystem-dev,
- libkf5coreaddons-dev,
- kwin-dev,
- libkf5config-dev,
- libdtkcore-dev,
- libgsettings-qt-dev,
- libfontconfig1-dev,
- libfreetype6-dev,
- libglib2.0-dev,
- libxrender-dev,
- libmtdev-dev,
- qttools5-dev-tools,
- qttools5-dev,
+ debhelper-compat (=13),
  deepin-gettext-tools,
  extra-cmake-modules,
- libkdecorations2-dev,
- libkf5wayland-dev,
- libkf5i18n-dev,
- qtdeclarative5-dev,
+ kwin-dev,
+ libdebhelper-perl,
+ libdtkcore-dev,
  libdtkgui-dev,
+ libfontconfig1-dev,
+ libegl-dev,
+ libfreetype6-dev,
+ libglib2.0-dev,
+ libgsettings-qt-dev,
+ libkdecorations2-dev,
+ libkf5config-dev,
+ libkf5coreaddons-dev,
+ libkf5globalaccel-dev,
+ libkf5i18n-dev,
+ libkf5wayland-dev,
+ libkf5windowsystem-dev,
+ libmtdev-dev,
+ libqt5x11extras5-dev,
  libxcb-composite0-dev,
  libxcb-damage0-dev,
-Standards-Version: 3.9.8
+ libxcb-shape0-dev,
+ libxkbfile-dev,
+ libxrender-dev,
+ libxss-dev,
+ libsm-dev,
+ x11proto-dev,
+ libxxf86vm-dev,
+ libqt5x11extras5-dev,
+ ninja-build,
+ qtbase5-dev,
+ libx11-xcb-dev,
+ qtbase5-private-dev,
+ qtdeclarative5-dev,
+ qttools5-dev,
+ qttools5-dev-tools,
+Standards-Version: 4.5.1
 Homepage: https://github.com/linuxdeepin/dde-kwin
 
 Package: dde-kwin
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
- kwin-x11, plasma-framework, libkf5globalaccel-bin,
- qml-module-qtquick-controls2, qml-module-qtquick-templates2
+Depends:
+ kwin-x11,
+ libkf5globalaccel-bin,
+ plasma-framework,
+ qml-module-qtquick-controls2,
+ qml-module-qtquick-templates2,
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: KWin configures/plugins on the DDE
  Let kwin work well in the Deepin Desktop Environment.
 
 Package: dde-kwin-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: Developer package of dde-kwin
  Provide dde-kwin plugin implementation basis files.

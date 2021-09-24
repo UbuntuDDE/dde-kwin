@@ -1,8 +1,12 @@
-dde-kwin (5.3.14-1) UNRELEASED; urgency=medium
+dde-kwin (5.3.14-1) impish; urgency=medium
 
+  [ Lei Su ]
   * unit test
 
- -- Lei Su <sulei@uniontech.com>  Wed, 02 Jun 2021 13:20:30 +0800
+  [ Arun Kumar Pariyar ]
+  * New upstream release.
+
+ -- Arun Kumar Pariyar <openarungeek@gmail.com>  Fri, 24 Sep 2021 16:23:11 +0545
 
 dde-kwin (5.3.13-1) unstable; urgency=medium
 
