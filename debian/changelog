@@ -1,0 +1,84 @@
+dde-kwin (5.3.14-1) UNRELEASED; urgency=medium
+
+  * unit test
+
+ -- Lei Su <sulei@uniontech.com>  Wed, 02 Jun 2021 13:20:30 +0800
+
+dde-kwin (5.3.13-1) unstable; urgency=medium
+
+  * Bug fix:
+    + 68673, 67845 Shortcut Super+Shift+number works in a wrong way
+    + 66630 Delete first workspace bigbackground didn't refresh
+    + 69809 Highlighter disappear when dragging desktop thumbnail
+    + 78218 Crashing when open multitasking view
+    + 68672 Shortcut meta+shift+padnumber didn't work
+
+ -- Lei Su <sulei@uniontech.com>  Mon, 31 May 2021 14:54:00 +0800
+
+dde-kwin (5.3.12-1) unstable; urgency=medium
+
+  * Bug fix:
+    + refactor: Remove line number in translate file.
+
+ -- Lei Su <sulei@uniontech.com>  Wed, 19 May 2021 20:37:53 +0800
+
+dde-kwin (5.3.11-1) unstable; urgency=medium
+
+  * add memory test.
+
+ -- Lei Su <sulei@uniontech.com>  Wed, 12 May 2021 20:14:13 +0800
+
+dde-kwin (5.3.10-1) unstable; urgency=medium
+  * Bug fix:
+    + 72368 fix: Compositing is able to enable in Euler.
+
+ -- Lei Su <sulei@uniontech.com>  Tue, 11 May 2021 13:24:35 +0800
+
+dde-kwin (5.3.9-1) UNRELEASED; urgency=medium
+
+  * Bug fix:
+    + 70513, 69821 fix: The community version of the multi tasking view is full of icons.
+    + 49208, 72368 fix: Add RPM package detection server script.
+
+ -- Lei Su <sulei@uniontech.com>  Wed, 21 Apr 2021 18:09:00 +0800
+
+dde-kwin (5.3.8-1) UNRELEASED; urgency=medium
+
+  * Bug fix:
+    + 60642 fix: Click "X" with fingers to turn off insensitivity.
+
+ -- Lei Su <sulei@uniontech.com>  Fri, 02 Apr 2021 17:11:55 +0800
+
+dde-kwin (5.3.7-1.1) unstable; urgency=medium
+
+  * Bug fix:
+  + Conflicts that occur when translating files.
+
+ -- Lei Su <sulei@uniontech.com>  Wed, 17 Mar 2021 17:35:56 +0800
+
+dde-kwin (5.3.6-1.1) unstable; urgency=medium
+
+  * Bug fix:
+    + 31415 add numpad to global shortcut.
+    + 66325 Current workspace changed even didn't add new workspace.
+    + 66627 Delete hint show when a workspace thumbnail drag to other one.
+    + 58520 There is no popup notify when there is no window in the workspace.
+    + 61749 when JM Display card, we close window effect. 
+
+ -- Lei Su <sulei@uniontech.com>  Wed, 17 Mar 2021 16:09:18 +0800
+
+dde-kwin (5.3.5-1) unstable; urgency=medium
+
+  * Task:
+    + 61378 Add translation file.
+  * Bug fix:
+    + 65167 Shortcut "alt+shift+~" crash in multitasking.
+    + 64912 Multitasking crash due to window position.
+
+ -- Lei Su <sulei@uniontech.com>  Tue, 09 Mar 2021 17:44:12 +0800
+
+dde-kwin (0.0.1-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Deepin Packages Builder <packages@deepin.com>  Mon, 11 Mar 2019 09:30:02 +0800
